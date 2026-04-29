@@ -1,8 +1,9 @@
-﻿namespace FrontToBackIntroTask.Models
+﻿using FrontToBackIntroTask.Models.Base;
+
+namespace FrontToBackIntroTask.Models
 {
-    public class Slider
+    public class Slider : BaseEntity
     {
-        public int Id { get; set; }
         public string Title { get; set; }
         public string Desc { get; set; }
     }
