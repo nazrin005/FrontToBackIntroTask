@@ -28,9 +28,14 @@ namespace FrontToBackIntroTask.Controllers
             };
             return View(vm);
         }
-        public IActionResult Details(int Id)
+        public IActionResult Details(int id)
         {
-            return View();
+            Product singleProduct = _context.Products
+                .Include (p => p.Images)
+                .Include(p => p.Tags)
+                .FirstOrDefault(p => p.Id == id);
+
+            return View(singleProduct);
         }
     }
 }

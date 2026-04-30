@@ -6,7 +6,7 @@
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @addTagHelper *, AuthoringTagHelpers
  
-<div class="hero-wrap" style="background-image: url(/assets/images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+<div class="hero-wrap" style="background-image: url('/assets/images/bg_2.jpg');" data-stellar-background-ratio="0.5">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -151,7 +151,7 @@
 								<div class="img d-flex align-items-center justify-content-center" style="background-image: url(/assets/images/@item.Images.FirstOrDefault(i => i.IsPrimary)?.Url">
 									<div class="desc">
 										<p class="meta-prod d-flex">
-										<a asp-controller="Home" asp-action="Deatils" asp-route-id="@item.Id"><span class="flaticon-shopping-bag"></span></a>
+										<a asp-controller="Home" asp-action="Details" asp-route-id="@item.Id"><span class="flaticon-shopping-bag"></span></a>
 											<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-heart"></span></a>
 											<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-visibility"></span></a>
 										</p>
